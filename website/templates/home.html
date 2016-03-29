@@ -1,0 +1,76 @@
+{% extends 'index.html' %}
+
+{% block title %}Arrecifes, Salto, Capitan Sarmiento, Carmen de Areco y todo el noroeste de la Pcia. de Bs. As.{% endblock %}
+
+{% block head %}
+	{% load static from staticfiles %}
+{% endblock %}
+
+{% block content %}
+    <section id="slider">
+    	<div id="slider_crs">
+			<img src="{% static "img/slider/slider1.jpg" %}" alt="Slider">
+			<img src="{% static "img/slider/slider2.jpg" %}" alt="Slider">
+			<img src="{% static "img/slider/slider3.jpg" %}" alt="Slider">
+		</div>
+		<div id="slider_crs_pag">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+	</section>
+	<section class="contenido-catalogo">
+		<h2>¡Te ofrecemos las herramientas que tu negocio necesita para crecer!</h2>
+		<button type="button"><a href="/catalog">VER EL CATALOGO</a></button>
+	</section>
+	<section id="contenido-nuevo">
+		<div><img src="{% static "img/wall-shelving.jpg" %}" alt=""></div><!--
+		--><div>
+			<h3>Bienvenidos a Leiva Equipamientos</h3>
+			<p>
+				Más de 15 años de experiencia asociada a la venta de equipamientos comerciales avalan nuestra responsabilidad y dedicacion, y nos convierte en la empresa más recomendada en Arrecifes y su zona de influencia.
+			</p>
+			<p>
+				Nuestra sólida trayectoria, precios y financiacion personalizada son el aliado perfecto que su negocio necesita para crecer.
+			</p>
+			<p>
+				Equipamos todo tipo de comercios: supermercados, panaderias, carnicerias, rotiserias, minimercados y kioscos. Nos adaptamos a las necesidades de cada cliente.
+			</p>
+		</div>
+	</section>
+	<section id="contenido-pagos">
+		<div>
+			<img src="{% static "img/pagos.png" %}" alt="">
+			<h3>PAGOS SEMANALES</h3>
+			<p>Plan de pagos semanales a la medida de cada cliente.</p>
+		</div><!--
+		--><div>
+			<img src="{% static "img/finance.png" %}" alt="">
+			<h3>FINANCIACION</h3>
+			<p>Financiación personalizada y adecuada para su comercio.</p>
+		</div><!--
+		--><div>
+			<img src="{% static "img/entregas.png" %}" alt="">
+			<h3>ENTREGAS COORDINADAS</h3>
+			<p>Entregas a domicilio con movilidad propia.</p>
+		</div>
+	</section>
+	<section class="contenido-catalogo bottom">
+		<h2>Consultanos por el producto que estas buscando!</h2>
+		<button type="button"><a href="/catalog">VER EL CATALOGO</a></button>
+	</section>
+	<section id="brands">
+		<ul id="brands_list">
+			<li><img src="{% static "img/kretz.png" %}" alt="Kretz"></li><!--
+			--><li><img src="{% static "img/freire.png" %}" alt="Freire"></li><!--
+			--><li><img src="{% static "img/morelli.png" %}" alt="Morelli"></li><!--
+			--><li><img src="{% static "img/systel.png" %}" alt="Systel"></li><!--
+			--><li><img src="{% static "img/lipari.png" %}" alt="Lipari"></li>
+		</ul>
+	</section>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="{% static "js/carouFredSel/jquery.carouFredSel-6.2.1-packed.js" %}"></script>
+	<script src="{% static "js/carouFredSel/helper-plugins/jquery.mousewheel.min.js" %}"></script>
+	<script src="{% static "js/carouFredSel/helper-plugins/jquery.touchSwipe.min.js" %}"></script>
+	<script src="{% static "js/carousels.js" %}"></script>
+{% endblock %}

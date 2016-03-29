@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Edgardo Leiva - Venta de equipamientos comerciales" />
+	<title>Edgardo Leiva - Equipamientos Comerciales - {% block title %}{% endblock %}</title>
+
+	{% load static from staticfiles %}
+	<link href="{% static "css/styles.css" %}" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet" type="text/css">
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<header>
+		<article>
+			<div id="logo_slogan">
+				<h1 id="logo"><a href="/">Edgardo<span>Leiva</span></a></h1>
+				<span id="slogan">EQUIPAMIENTOS COMERCIALES</span>
+			</div>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="/" {% if navMenu == "" %}class="selected"{% endif %}><i class="fa fa-home"></i> Home</a></li>
+						<li><a href="/catalog" {% if navMenu == "catalog" %}class="selected"{% endif %}><i class="fa fa-list-ul"></i> Catalogo</a></li>
+						<li><a href="/logistic" {% if navMenu == "logistic" %}class="selected"{% endif %}><i class="fa fa-truck"></i> Logistica</a></li>
+						<li><a href="/contact" {% if navMenu == "contact" %}class="selected"{% endif %}><i class="fa fa-comments"></i> Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</article><!--
+		--><div id="contact_header">
+			<div id="contact_info_header">
+				<div>
+					<p class="boldie">INFO+</p>
+				</div>
+				<div>
+					<p><span class="boldie">Direccion_</span> Mosconi 915</p>
+					<p><span class="boldie">Tel_</span> 02478-453693</p>
+					<p><span class="boldie">Cel_</span> 02478-460242</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content">
+        {% block content %}{% endblock %}
+	</div>
+	<footer>
+		<div>
+			<div id="contact_info">
+				<p class="contact_name">Leiva Edgardo</p>
+				<p><i class="fa fa-map-marker fa-lg"></i> Direccion_ Mosconi 915</p>
+				<p><i class="fa fa-phone"></i> Tel_ 02478-453693</p>
+				<p><i class="fa fa-mobile-phone fa-lg"></i> Cel_ 02478-460242</p>
+			</div>
+		</div><!--
+		--><div>
+			<ul id="footer_nav">
+				<li><a href="/" {% if navMenu == "" %}class="selected"{% endif %}>Home</a></li> /
+				<li><a href="/catalog/" {% if navMenu == "catalog" %}class="selected"{% endif %}>Catalogo</a></li> /
+				<li><a href="/logistic/" {% if navMenu == "logistic" %}class="selected"{% endif %}>Logistica</a></li> /
+				<li><a href="/contact/" {% if navMenu == "contact" %}class="selected"{% endif %}>Contacto</a></li>
+			</ul>
+		</div>
+		<div id="copyright">
+			<p>Todos los derechos reservados.</p> 
+			<p>by <a href="http://luciano.im">Luciano Muñoz</a></p>
+		</div>
+	</footer>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</body>
+</html>

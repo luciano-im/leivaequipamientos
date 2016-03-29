@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+{% block title %}{% endblock %}
+
+{% block head %}
+	{% load static from staticfiles %}
+{% endblock %}
+
+{% block content %}
+	<section id="contact">
+		<div>
+			<h3>Comunicate con nosotros</h3>
+			<form action="" class="contact_form" method="post">
+				<!-- <input type="text" name="name" title="name" placeholder="Nombre" required>
+				<input type="email" name="email" title="email" placeholder="Email" required>
+				<input type="text" name="phone" title="phone" placeholder="Telefono" required>
+				<textarea name="message" title="message" placeholder="Dejanos tu mensaje!" rows="5" required></textarea> -->
+				{% csrf_token %}
+				<!-- {{ form.as_p }} -->
+				{{ form.name }}
+				{{ form.email }}
+				{{ form.telephone }}
+				{{ form.message }}
+				<input type="submit" value="Enviá el mensaje!">
+			</form>
+		</div><!--
+		--><div>
+			<div class="square">
+				<img src="{% static "img/square.gif" %}" alt="">
+				<img src="{% static "img/square.gif" %}" alt="">
+				<img src="{% static "img/square.gif" %}" alt="">
+			</div>
+			<p class="boldie" style="margin-bottom: .3em;">Edgardo Leiva</p>
+			<p><span class="greenf">Direccion_</span> Mosconi 915</p>
+			<p><span class="greenf">Tel_</span> 02478-453693 / <span class="greenf">Cel_</span> 02478-460242</p>
+			<iframe width='100%' height='225px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/luchisds.lhdbamh1/attribution,zoompan.html?access_token=pk.eyJ1IjoibHVjaGlzZHMiLCJhIjoiVkNPam1nTSJ9.xmW7X9AcRugB2l_V6A5gUA'></iframe>
+		</div>
+	</section>
+	
+{% endblock %}

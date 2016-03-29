@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Edgardo Leiva - Venta de equipamientos comerciales" />
+	<title>Edgardo Leiva - La pagina no existe</title>
+
+	{% load static from staticfiles %}
+	<!-- <link href="{% static "css/styles.css" %}" rel="stylesheet" /> -->
+	<link href="{% static "css/errors.css" %}" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet" type="text/css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<article>
+		<div id="logo_slogan">
+			<h1 id="logo"><a href="/">Edgardo<span>Leiva</span></a></h1>
+			<span id="slogan">EQUIPAMIENTOS COMERCIALES</span>
+		</div>
+		<img src="{% static "img/404.jpg" %}" alt="Oopss la pagina no existe!" height="200" class="deco">
+		<p>¡Ooppss, la pagina que buscas no existe!</p>
+		<p>Quizas quieras dirigirte a una estas paginas:</p>
+		<div>
+			<nav>
+				<ul>
+					<li><a href="/" {% if navMenu == "" %}class="selected"{% endif %}><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="/catalog" {% if navMenu == "catalog" %}class="selected"{% endif %}><i class="fa fa-list-ul"></i> Catalogo</a></li>
+					<li><a href="/logistic" {% if navMenu == "logistic" %}class="selected"{% endif %}><i class="fa fa-truck"></i> Logistica</a></li>
+					<li><a href="/contact" {% if navMenu == "contact" %}class="selected"{% endif %}><i class="fa fa-comments"></i> Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</article>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+{% block title %}{% endblock %}
+
+{% block head %}
+	{% load static from staticfiles %}
+{% endblock %}
+
+{% block content %}
+	<section id="logistic">
+		<p>Contamos con la <span class="boldie">seriedad</span> y el <span class="boldie">compromiso</span> de una gran empresa, y nos valemos de nuestra cultura familiar para estar siempre en contacto directo con los clientes, estableciendo una comunicacion agil, calida y personalizada.</p>
+		<p>El mapa interactivo muestra nuestra zona de influencia, que crece día a día cimentada por la confianza y satisfaccion de nuestros clientes, la calidad de los productos con marcas lider en el mercado y los mejores precios de la zona.</p>
+		<div class="square">
+			<img src="{% static "img/square.gif" %}" alt="">
+			<img src="{% static "img/square.gif" %}" alt="">
+			<img src="{% static "img/square.gif" %}" alt="">
+		</div>
+		<iframe width='100%' height='450px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/luchisds.ldppdol8/attribution,zoompan.html?access_token=pk.eyJ1IjoibHVjaGlzZHMiLCJhIjoiVkNPam1nTSJ9.xmW7X9AcRugB2l_V6A5gUA'></iframe>
+		<div class="square">
+			<img src="{% static "img/square.gif" %}" alt="">
+			<img src="{% static "img/square.gif" %}" alt="">
+			<img src="{% static "img/square.gif" %}" alt="">
+		</div>
+	</section>
+	
+{% endblock %}

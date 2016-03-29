@@ -1,0 +1,537 @@
+body, html
+  margin 0 auto
+  padding 0
+
+body
+  font-family 'Maven Pro', sans-serif
+  font-size 16px
+  max-width 1280px
+  min-width 320px
+  position relative
+
+footer
+  background #242424
+  color #AAA
+  font-size 1em
+  padding 1em 5%
+  & > div
+    &:not(#copyright)
+      display inline-block
+      vertical-align middle
+      width 50%
+  p
+    margin .2em 0
+  ul
+    color #333
+    float right
+    vertical-align middle
+    li
+      margin 0 .5em
+      a
+        color #AAA
+  .contact_name
+    font-size 1.1em
+    font-weight bold
+    margin-bottom .5em
+
+header
+  background #FFF
+  clear both
+  margin 0 5%
+  max-height 160px
+  position relative
+  article
+    border-left 1px solid #DDD
+    border-right 1px solid #DDD
+    display inline-block
+
+li
+  display inline-block
+  list-style none
+
+nav
+  margin-top 10px
+  font-size 1.1em
+  ul
+    li
+      &:not(:nth-child(4))
+        border-right 1px solid #DDD
+      a
+        color #444
+        padding 1.5em 1.8em
+
+ul
+  margin 0
+  padding 0
+
+#brands
+  background #F3EBDA
+  padding 1em 5% 1em 5%
+
+#brands_list
+  text-align center
+  width 100%
+  li
+    vertical-align middle
+    width 15%
+
+#contact
+  padding 0 5% 5% 2em
+  div
+    &:not(.square)
+      display inline-block
+      width 50%
+    &:nth-child(2)
+      text-align center
+      vertical-align top
+  h3
+    border-bottom 4px double #60C59C
+    margin-right 2em
+  iframe
+    margin-top 1em
+  p
+    margin 0
+
+#contact_info
+  float left
+  text-align left
+  vertical-align middle
+  i
+    &::before
+      color #60C59C
+      text-align center
+      width 15px !important
+
+#contact_header
+  border-left 1px solid #DDD
+  border-right 1px solid #DDD
+  display inline-block
+  overflow hidden
+  padding 1em 2em
+  position absolute
+  top 0
+  bottom 0
+  right 0
+
+#contact_info_header
+  border-bottom 1px solid #DDD
+  margin 0 0 1.5em 0
+  text-align right
+  width 300px
+  div
+    display inline-block
+    vertical-align middle
+    &:nth-child(1)
+      padding-right 1em
+    &:nth-child(2)
+      border-left 1px solid #DDD
+      width 50%
+  p
+    font-size .8em
+    margin .2em 0
+
+#copyright
+  margin-top 1em
+  text-align center
+  a
+    color #FFF
+    text-decoration none
+    text-shadow 1px 1px 2px #000
+
+#latest_products
+  a
+    display inline-block
+    margin 0
+    padding 0
+    overflow hidden
+    text-decoration none
+  img
+    transition 1s all ease
+  li
+    border 1px dashed #60C59C
+    position relative
+    div
+      background #60C59C
+      height 188px
+      left 10px
+      opacity 0
+      position absolute
+      top 10px
+      transition 1s all ease
+      width 326px
+    &:hover
+      div
+        opacity .7
+      p
+        span
+          background-color #57b28c
+    i
+      color #FFF
+      position absolute
+      top 50%
+      left 50%
+      margin -1em 0 0 -20px
+      opacity 0
+      transition 1s all ease
+      text-shadow 0 -2px 0 rgba(0, 0, 0, .3)
+    p
+      color white
+      left 20px
+      line-height 2em
+      position absolute
+      bottom 0
+      text-shadow -1px -1px 0 rgba(0, 0, 0, .3)
+      span
+        background #60C59C
+        opacity 0.8
+        padding .4em
+        transition 1s all ease
+
+#latest_products li:hover i,
+#latest_products li:hover p span
+  opacity 1
+
+#lines_products
+  background #2E2E2E
+  text-align center
+  padding-top .4em
+  ul
+    border-top 1px solid #60C59C
+
+#lines_products_list
+  margin 0 5%
+  li
+    border-top 8px solid #000
+    transition .5s all ease
+    &:hover
+      border-top 8px solid #60C59C
+      a
+        color #FFF
+    a
+      color #888
+      padding 1.2em 1.8em 0 1.8em
+      transition .5s all ease
+    i
+      display block
+      margin-top .6em
+      visibility hidden
+    &.selected
+      background #444
+      border-top 8px solid #60C59C
+      a
+        color #FFF
+      i
+        color #60C59C
+        visibility visible
+
+#logistic
+  iframe
+    border-bottom 2px dotted #60C59C
+    border-top 2px dotted #60C59C
+  p
+    padding 0 5%
+
+#logo
+  a
+    color #444
+    font-size 2em
+    text-decoration none
+  span
+    color #60C59C
+    font-weight bold
+
+#logo_slogan
+  text-align center
+
+#product_info
+  li
+    display list-item
+    margin-left .6em
+    line-height 1.5em
+    &:before
+      color #60C59C
+      content "\2022"
+      font-size 2em
+      padding-right .25em
+      position relative
+      vertical-align middle
+  #product_description
+    display inline-block
+    margin-bottom 1em
+    vertical-align top
+    width 70%
+    h3
+      border none
+    p
+      margin 0
+  #product_img
+    display inline-block
+    width 30%
+  h3
+    background #60C59C
+    color white
+    font-weight normal
+    opacity 0.8
+    padding .4em
+
+#products_list_names
+  border-top 2px solid #60C59C
+  &.closed
+    display none
+  p
+    display inline-block
+    margin 1em
+    padding .5em
+    color white
+    background #666
+    text-shadow 1px 1px 2px #444
+    transition .5s all ease
+    box-shadow 3px 3px 0px rgba(0,0,0,.4)
+    &:hover
+      background #60C59C
+  a
+    &.selected
+      p
+        background #60C59C
+
+#slider
+  height 448px
+  position relative
+  width 1280px
+
+#slider_crs
+  img
+    display inline-block
+
+#slider_crs_pag
+  position absolute
+  bottom 15px
+  right 15px
+  width 80px
+  a
+    background #CCC
+    display inline-block
+    margin 0 .2em
+    width 15px
+    height 15px
+    &.selected
+      background #60C59C
+
+#slogan
+  font-size .9em
+
+nav ul li a,
+#lines_products ul li a,
+footer ul li a
+  display block
+  text-decoration none
+
+nav ul li a:hover,
+footer ul li a:hover
+  color #60C59C
+
+nav ul li a.selected,
+footer ul li a.selected
+  color #60C59C
+
+#latest_products,
+#products,
+#product_details
+  background #FFF
+  padding 1em 5%
+
+#latest_products h3,
+#products h3,
+#product_details h2
+  border-bottom 4px double #6E6E6E
+  padding-bottom .5em
+
+#latest_products a,
+#products li
+  margin 1em
+  position relative
+
+#latest_products li,
+#products li
+  height 208px
+  width 346px
+  overflow hidden
+
+#logistic,
+#contact
+  border-top 5px solid #60C59C
+  padding-top 2em
+
+#products
+  img
+    height 208px
+    width 346px
+    transition 1s all ease
+
+#latest_products li:hover img,
+#products li:hover img
+  transform scale(1.05)
+  -webkit-transform scale(1.05)
+
+#lines_products_nav
+  a
+    background #EEE
+    color #999
+    display inline-block
+    font-size 1.1em
+    font-weight bold
+    text-align center
+    text-decoration none
+    padding .1em .6em
+
+#logo, #slogan
+  color #444
+  font-family 'Arial','Arimo','sans-serif'
+  font-weight normal
+  margin 0
+
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form textarea
+  background-color #BBB
+  border-radius 3px
+  border 1px solid transparent
+  color #FFF
+  display inline-block
+  font-family 'Maven Pro'
+  font-size .9em
+  margin .5em 0
+  padding .5em 3%
+  transition all 0.3s ease
+  -moz-transition all 0.3s ease
+  -ms-transition all 0.3s ease
+  -o-transition all 0.3s ease
+  -webkit-transition all 0.3s ease
+  width 70%
+
+.contact_form input:focus,
+.contact_form textarea:focus
+  border 1px solid #60C59C
+  box-shadow 0 0 8px #60C59C
+  outline none
+
+.contact_form
+  input[type="submit"]
+    background #60C59C
+    border-radius 3px
+    border 0
+    box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -moz-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -ms-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -o-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -webkit-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    color #FFF
+    cursor pointer
+    font-size 1em
+    margin-top .5em
+    padding .8em 1.2em
+    text-shadow 0 1px 4px #000
+    transition background 0.3s ease
+    -moz-transition background 0.3s ease
+    -ms-transition background 0.3s ease
+    -o-transition background 0.3s ease
+    -webkit-transition background 0.3s ease
+
+.cs
+  color #EF3D46
+
+.menu_route
+  color #888
+  font-size .8em
+  text-transform uppercase
+  .route_separator
+    color #CCC
+
+.boldie
+  font-weight bold
+
+.square
+  margin 2em 0 1.5em 0
+  text-align center
+
+.greenf
+  color #60C59C
+
+#contenido-nuevo
+  background-color #EEE
+  margin 2em 3%
+  padding 3em 4%
+  & > div
+    display inline-block
+    margin 1%
+    vertical-align top
+    &:nth-child(1)
+      width 50%
+    &:nth-child(2)
+      padding-left 2em
+      width 43%
+  img
+    height auto
+    width 100%
+  p
+    line-height 1.5em
+  h2
+    font-size 10em
+  h3
+    background url(../img/subtitle-deco.png) no-repeat
+    padding-left 2em
+
+#contenido-pagos
+  margin 0 auto
+  padding 1em 1.5em 3em 1.5em
+  position relative
+  & > div
+    display inline-block
+    text-align center
+    vertical-align top
+    position relative
+    margin 1.6%
+    width 30%
+  img
+    display block
+    margin 0 auto
+
+.contenido-catalogo
+  &:not(.bottom)
+    background url(../img/mesh.png) repeat
+    padding 2em 0
+    text-align center
+  &.bottom
+    padding 4em 0
+    background-image url(../img/photo.jpeg)
+    background-position center 8%
+    background-size 100% auto
+    text-align center
+    h2
+      text-shadow 2px 2px 1px rgba(0,0,0,1)
+      display inline-block
+      color white
+      font-size 1.8em
+      margin-right 1em
+  button
+    background #60C59C
+    border-radius 3px
+    border 0
+    box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -moz-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -ms-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -o-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    -webkit-box-shadow inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 0px #379663, inset 0 -1px 0 rgba(255, 255, 255, 0.15), 0 6px 6px 1px rgba(0, 0, 0, 0.5)
+    cursor pointer
+    font-size 1em
+    margin-top .5em
+    padding .8em 1.2em
+    text-shadow 0 1px 4px #000
+    transition background 0.3s ease
+    -moz-transition background 0.3s ease
+    -ms-transition background 0.3s ease
+    -o-transition background 0.3s ease
+    -webkit-transition background 0.3s ease
+    a
+      color #FFF
+      text-decoration none
